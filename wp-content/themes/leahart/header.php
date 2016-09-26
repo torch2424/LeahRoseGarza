@@ -19,6 +19,14 @@
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
 	<![endif]-->
 	<?php wp_head(); ?>
+
+	<!-- Custom Stylesheets, and css libraries -->
+	<link rel="stylesheet" href="<?php
+    	echo get_template_directory_uri() . '/' . 'leahStyles.css';
+    ?>">
+	<link rel="stylesheet" href="<?php
+    	echo get_template_directory_uri() . '/' . 'animate.min.css';
+    ?>">
 </head>
 
 <body <?php body_class(); ?>>
