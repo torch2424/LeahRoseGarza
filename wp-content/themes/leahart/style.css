@@ -2768,7 +2768,7 @@ p > video {
 	}
 
 	.site-main {
-		padding: 7.6923% 0;
+		padding: 5px;
 	}
 
 	.hentry.sticky:not(.has-post-thumbnail) {
@@ -4090,7 +4090,7 @@ p > video {
 		position: fixed;
 		top: 0;
 		left: 0;
-		width: 29.4118%;
+		width: 300px;
 		z-index: 0; /* Fixes flashing bug with scrolling on Safari */
 	}
 
@@ -4100,11 +4100,10 @@ p > video {
 	}
 
 	.sidebar {
-		float: left;
-		margin-right: -100%;
-		max-width: 413px;
-		position: relative;
-		width: 29.4118%;
+		position: absolute !important;
+		top: 0px;
+		left: 0px;
+		width: 300px;
 	}
 
 	.secondary {
@@ -4116,7 +4115,7 @@ p > video {
 	}
 
 	.site-main {
-		padding: 8.3333% 0;
+		padding: 5px;
 	}
 
 	.site-content {
@@ -5883,7 +5882,6 @@ p > video {
 
 @media screen and (min-width: 87.6875em) {
 	body:before {
-		width: 300px;
 		width: 300px;
 	}
 }
