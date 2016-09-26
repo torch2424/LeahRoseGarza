@@ -91,6 +91,12 @@
     border-top: 2px solid #FDFDFD;
 }
 
+.leahFooter {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 400px;
+}
+
 /* Overriding Wordpress styles */
 .widget-title {
     display: none;
