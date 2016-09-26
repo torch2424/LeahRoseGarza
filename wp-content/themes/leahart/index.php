@@ -30,6 +30,8 @@ get_header(); ?>
 			<!-- Show a fancy art preview for the post -->
 			<div class="artSquareContainers">
 				<?php
+				//Create an array of animation classes
+				$fadeArray = array("fadeInUp", "fadeInLeft", "fadeInDown", "fadeInRight");
 				// Start the loop.
 				while ( have_posts() ) : the_post();
 					/*
@@ -40,7 +42,39 @@ get_header(); ?>
 					//get_template_part( 'content', get_post_format() );
 				?>
 					<!-- Singular Art Square -->
-					<div class="artSquare">
+					<div class="artSquare animated <?php echo $fadeArray[array_rand($fadeArray)]; ?>">
+						<?php
+                            $artImage = types_render_field("art-images", array("raw" => "true"));
+							$artVideo = types_render_field("art-video", array("raw" => "true"));
+                            if( !empty($artImage) ) {
+								//Get the url of the first Image in the array
+								$imageUrls = types_render_field("art-images", array(
+									"url" => "true",
+									'separator' => '|'));
+								$imageUrls = explode( '|', $imageUrls );
+                        ?>
+							<img class="artSquareImage" alt="Work Image" src="<?php echo $imageUrls[0] ?>">
+                        <?php
+							} else if( !empty($artVideo) ) {
+							//Get the first video in the array
+							$videos = types_render_field("art-video", array(
+								"output" => "raw",
+								'separator' => '|'));
+							$videos = explode( '|', $videos );
+                        ?>
+
+						<!-- Unclickable iframe youtube embed -->
+						<img class="artSquareImage" alt="Youtube Image" src="https://img.youtube.com/vi/<?php echo get_youtube_video_id($videos[0]) ?>/0.jpg">
+						<img class="playButtonOverlay" alt="Play Overlay" src="<?php echo get_template_directory_uri() . '/' . 'assets/playButton.png'; ?>">
+
+						<?php
+							} else {
+                        ?>
+							<!-- Post the default material icon -->
+							<img class="artSquareImage" alt="Post Icon material" src="<?php echo get_template_directory_uri() . '/' . 'assets/speakerNotes.png'; ?>">
+						<?php
+							}
+                        ?>
 					</div>
 
 				<?php

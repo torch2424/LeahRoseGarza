@@ -377,3 +377,32 @@ function my_get_posts( $query ) {
 		$query->set( 'post_type', array( 'post', 'work' ) );
 	return $query;
 }
+
+//Function for debugging
+function console_log( $data ){
+  echo '<script>';
+  echo 'console.log('. json_encode( $data ) .')';
+  echo '</script>';
+}
+
+//Function to format youtube urls
+function get_youtube_video_id($url) {
+
+	//Simple remove the first half of the string
+	//iframe: https://www.youtube.com/embed/VIDEO_ID
+	//thumbnail: https://img.youtube.com/vi/VIDEO_ID/0.jpg
+
+	//v/
+	$url = str_replace("http://www.youtube.com/v/", "", $url);
+	$url = str_replace("https://www.youtube.com/v/", "", $url);
+
+	//Watch?v=
+	$url = str_replace("http://www.youtube.com/watch?v=", "", $url);
+	$url = str_replace("https://www.youtube.com/watch?v=", "", $url);
+
+	//youtu.be
+	$url = str_replace("http://youtu.be/", "", $url);
+	$url = str_replace("https://youtu.be/", "", $url);
+
+	return $url;
+}

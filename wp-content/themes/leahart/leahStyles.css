@@ -2,7 +2,8 @@
 
 .artSquareContainers {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-content: center;
     flex-wrap: wrap;
     width: 100%;
 }
@@ -10,9 +11,29 @@
 .artSquare {
     width: 20vw;
     height: 20vw;
-    background-color: red;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 5px;
-    margin-right: 5px;
+    background-color: rgba(80,80,80,0);
+    margin-top:  5px;
+    margin-bottom: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+    overflow: hidden;
+}
+
+.artSquareImage {
+    width: 100%;
+    height: auto;
+    min-height: 20vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.playButtonOverlay {
+    width: 100%;
+    height: auto;
+    min-height: 20vw;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+    opacity: 0.25;
+    margin-top: -275px;
 }
