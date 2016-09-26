@@ -75,6 +75,26 @@ get_header(); ?>
 						<?php
 							}
                         ?>
+
+						<!-- Finally the overlay -->
+						<div class="infoOverlay">
+							<!--Link the div -->
+							<a class = "overlayLink" href="<?php the_permalink() ?>">
+							</a>
+
+							<div class="overlayInfo">
+								<!-- Post title -->
+								<h3 class="centerText"><?php the_title() ?></h3>
+
+								<!-- Horizontal divider -->
+								<div class="artSquareDividerContainer center">
+									<div class="artSquareDivider"></div>
+								</div>
+
+								<!-- Post Date -->
+								<h5 class="centerText"><?php the_time( get_option( 'date_format' ) ); ?></h5>
+							</div>
+						</div>
 					</div>
 
 				<?php

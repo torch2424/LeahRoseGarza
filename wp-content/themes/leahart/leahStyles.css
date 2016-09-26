@@ -1,3 +1,15 @@
+/* General Styles */
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centerText {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
 /* Custom Styles for Leah */
 
 .artSquareContainers {
@@ -17,6 +29,7 @@
     margin-left: 2px;
     margin-right: 2px;
     overflow: hidden;
+    position: relative;
 }
 
 .artSquareImage {
@@ -33,7 +46,47 @@
     min-height: 20vw;
     margin-left: auto;
     margin-right: auto;
-    z-index: 2;
+    z-index: 1;
     opacity: 0.25;
-    margin-top: -275px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.infoOverlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 20vw;
+    height: 20vw;
+    background-color: rgba(80, 80, 80, 0.75);
+    z-index: 2;
+    transition: all 0.5s ease;
+    opacity: 0;
+    color: #FDFDFD;
+}
+
+.infoOverlay:hover {
+    opacity: 1.0;
+}
+
+.overlayLink {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    z-index: 3;
+}
+
+.overlayInfo {
+    margin-top: 65px;
+}
+
+.artSquareDividerContainer {
+    width: 70%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.artSquareDivider {
+    height: 0px;
+    border-top: 2px solid #FDFDFD;
 }
