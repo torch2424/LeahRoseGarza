@@ -1295,7 +1295,6 @@ img.aligncenter {
 .site-header {
 	background-color: #fff;
 	border-bottom: 1px solid rgba(51, 51, 51, 0.1);
-	padding: 7.6923%;
 }
 
 .site-branding {
@@ -4353,7 +4352,7 @@ p > video {
 		background-color: transparent;
 		border-bottom: 0;
 		margin-top: 50px;
-		margin-left: 10px;
+		margin-left: 20px;
 
 	}
 
@@ -5981,10 +5980,6 @@ p > video {
 
 	.site-branding {
 		padding: 0;
-	}
-
-	.site-header {
-		padding: 7.6923% 0;
 	}
 
 	.site-description {

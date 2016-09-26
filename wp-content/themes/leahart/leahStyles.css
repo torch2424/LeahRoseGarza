@@ -90,3 +90,20 @@
     height: 0px;
     border-top: 2px solid #FDFDFD;
 }
+
+/* Overriding Wordpress styles */
+.widget-title {
+    display: none;
+}
+
+.widget_pages {
+    padding: 0px !important;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.page_item {
+    border-top: none !important;
+    border-bottom: none !important;
+}
