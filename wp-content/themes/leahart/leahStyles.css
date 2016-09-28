@@ -21,8 +21,8 @@
 }
 
 .artSquare {
-    width: 20vw;
-    height: 20vw;
+    width: 19vw;
+    height: 19vw;
     background-color: rgba(80,80,80,0);
     margin-top:  5px;
     margin-bottom: 5px;
@@ -35,7 +35,7 @@
 .artSquareImage {
     width: 100%;
     height: auto;
-    min-height: 20vw;
+    min-height: 19vw;
     margin-left: auto;
     margin-right: auto;
 }
@@ -43,7 +43,7 @@
 .playButtonOverlay {
     width: 100%;
     height: auto;
-    min-height: 20vw;
+    min-height: 19vw;
     margin-left: auto;
     margin-right: auto;
     z-index: 1;
@@ -57,8 +57,8 @@
     position: absolute;
     top: 0px;
     left: 0px;
-    width: 20vw;
-    height: 20vw;
+    width: 19vw;
+    height: 19vw;
     background-color: rgba(80, 80, 80, 0.75);
     z-index: 2;
     transition: all 0.5s ease;
@@ -72,8 +72,8 @@
 
 .overlayLink {
     position: absolute;
-    width: 20vw;
-    height: 20vw;
+    width: 19vw;
+    height: 19vw;
     z-index: 3;
 }
 
@@ -97,19 +97,138 @@
     margin-left: 400px;
 }
 
+.youtubeEmbedContainer {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.youtubeEmbed {
+    width: 100%;
+    height: 35vh;
+}
+
+.artImageContainer {
+    width: 90%;
+    height: auto;
+    transition: all 0.5s ease;
+    opacity: 1.0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.artImageContainer:hover {
+    opacity: 0.85;
+}
+
+
+
+/* Mobile/Tablet Leah Styles */
+@media only screen and (max-width: 768px)  {
+    .artSquareContainers {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .artSquare {
+        width: 45vw;
+        height: 45vw;
+    }
+
+    .artSquareImage {
+        width: 100%;
+        height: auto;
+        min-height: 45vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .playButtonOverlay {
+        min-height: 45vw;
+    }
+
+    .infoOverlay {
+        width: 45vw;
+        height: 45vw;
+    }
+
+    .infoOverlay:hover {
+        opacity: 1.0;
+    }
+
+    .overlayLink {
+        width: 45vw;
+        height: 45vw;
+    }
+
+    .overlayInfo {
+        margin-top: 17vw;
+    }
+
+    .artSquareDividerContainer {
+        width: 70%;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+
+    .artSquareDivider {
+        height: 0px;
+        border-top: 2px solid #FDFDFD;
+    }
+
+    .leahFooter {
+        margin-left: 65px;
+    }
+}
+
 /* Overriding Wordpress styles */
+.hentry {
+    margin-top: 10px !important;
+    padding-top: 30px;
+}
+
 .widget-title {
     display: none;
 }
 
 .widget_pages {
     padding: 0px !important;
-    margin-left: 20px;
-    margin-top: 20px;
     font-weight: bold;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 768px)  {
+
+    .widget-area {
+        margin-top: 5px;
+        margin: 0px;
+    }
+
+    .widget_pages {
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        margin: 0px;
+    }
 }
 
 .page_item {
     border-top: none !important;
     border-bottom: none !important;
+}
+
+.secondary.toggled-on {
+    padding: 0px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }

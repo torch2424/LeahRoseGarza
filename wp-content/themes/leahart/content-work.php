@@ -10,7 +10,7 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('animated fadeIn'); ?>>
 	<?php
 		// Post thumbnail.
 		twentyfifteen_post_thumbnail();
@@ -38,9 +38,34 @@
 		//Loop through the videos, and put into iframe
 		foreach ($videos as $index => $video) {
 			?>
-			<iframe id="ytplayer" class="youtubeEmbed" type="text/html" width="640" height="390"
-			  src="https://www.youtube.com/embed/<?php echo get_youtube_video_id($video); ?>?origin=<?php echo site_url(); ?>"
-			  frameborder="0"></iframe>
+			<div class="youtubeEmbedContainer">
+				<iframe id="ytplayer" class="youtubeEmbed" type="text/html"
+				  src="https://www.youtube.com/embed/<?php echo get_youtube_video_id($video); ?>?origin=<?php echo site_url(); ?>"
+				  frameborder="0">
+			  	</iframe>
+			</div>
+			<?php
+		}
+	}
+	?>
+
+	<?php
+	//Show Images
+	$optionalField = types_render_field("art-images", array("raw" => "true"));
+	if( !empty($optionalField) ) {
+		$images = types_render_field( 'art-images', array(
+			'url' => 'true',
+			'separator' => '|'
+		) );
+		$images = explode( '|', $images );
+		//Loop through the videos, and put into iframe
+		foreach ($images as $index => $image) {
+			?>
+			<div class = "artImageContainer">
+				<a href="<?php echo $image; ?>">
+					<img class="fullArtImage" alt="Full Image" src="<?php echo $image; ?>">
+				</a>
+			</div>
 			<?php
 		}
 	}

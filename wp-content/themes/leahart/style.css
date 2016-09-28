@@ -1308,7 +1308,7 @@ img.aligncenter {
 	font-size: 22px;
 	font-size: 2.2rem;
 	font-weight: 700;
-	line-height: 1.3636;
+	line-height: 2;
 	margin-bottom: 0;
 }
 
@@ -1584,7 +1584,6 @@ img.aligncenter {
 
 .hentry {
 	background-color: #fff;
-	padding-top: 7.6923%;
 	position: relative;
 }
 
@@ -1593,8 +1592,7 @@ img.aligncenter {
 }
 
 .hentry.sticky:not(.has-post-thumbnail) {
-	padding-top: -webkit-calc(7.6923% + 24px);
-	padding-top: calc(7.6923% + 24px);
+	padding-top: 15px;
 }
 
 .hentry + .hentry {
@@ -3086,6 +3084,7 @@ p > video {
 	.site-branding {
 		min-height: 3.7059em;
 		padding-right: 66px;
+		padding-left: 10px;
 	}
 
 	.site-title {
@@ -4364,7 +4363,7 @@ p > video {
 	.site-title {
 		font-size: 22px;
 		font-size: 2.2rem;
-		line-height: 1.3636;
+		line-height: 2;
 	}
 
 	.custom-logo {
@@ -4478,10 +4477,6 @@ p > video {
 		margin: 0 8.3333%;
 	}
 
-	.hentry {
-		padding-top: 8.3333%;
-	}
-
 	.hentry + .hentry,
 	.page-header + .hentry,
 	.page-header + .page-content {
@@ -4506,7 +4501,7 @@ p > video {
 
 	.entry-content,
 	.entry-summary {
-		padding: 0 10% 10%;
+		padding: 0 10% 30px;
 	}
 
 	.entry-content h1,
@@ -4991,7 +4986,7 @@ p > video {
 	.site-title {
 		font-size: 24px;
 		font-size: 2.4rem;
-		line-height: 1.1667;
+		line-height: 2;
 	}
 
 	.wp-custom-logo .site-title {
@@ -5533,7 +5528,7 @@ p > video {
 	.site-title {
 		font-size: 27px;
 		font-size: 2.7rem;
-		line-height: 1.1852;
+		line-height: 2;
 	}
 
 	.wp-custom-logo .site-title {
@@ -5991,7 +5986,7 @@ p > video {
 	}
 
 	.hentry.has-post-thumbnail {
-		padding-top: 7.6923%;
+		padding-top: 10px;
 	}
 
 	.sticky-post {
