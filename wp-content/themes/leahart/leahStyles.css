@@ -21,8 +21,8 @@
 }
 
 .artSquare {
-    width: 19vw;
-    height: 19vw;
+    width: 17.5vw;
+    height: 17.5vw;
     background-color: rgba(80,80,80,0);
     margin-top:  5px;
     margin-bottom: 5px;
@@ -35,7 +35,7 @@
 .artSquareImage {
     width: 100%;
     height: auto;
-    min-height: 19vw;
+    min-height: 17.5vw;
     margin-left: auto;
     margin-right: auto;
 }
@@ -43,7 +43,7 @@
 .playButtonOverlay {
     width: 100%;
     height: auto;
-    min-height: 19vw;
+    min-height: 17.5vw;
     margin-left: auto;
     margin-right: auto;
     z-index: 1;
@@ -57,8 +57,8 @@
     position: absolute;
     top: 0px;
     left: 0px;
-    width: 19vw;
-    height: 19vw;
+    width: 17.5vw;
+    height: 17.5vw;
     background-color: rgba(80, 80, 80, 0.75);
     z-index: 2;
     transition: all 0.5s ease;
@@ -72,8 +72,8 @@
 
 .overlayLink {
     position: absolute;
-    width: 19vw;
-    height: 19vw;
+    width: 17.5vw;
+    height: 17.5vw;
     z-index: 3;
 }
 
@@ -126,7 +126,7 @@
 
 
 /* Mobile/Tablet Leah Styles */
-@media only screen and (max-width: 768px)  {
+@media only screen and (max-width: 955px)  {
     .artSquareContainers {
         display: flex;
         justify-content: center;
