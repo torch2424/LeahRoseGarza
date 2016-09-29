@@ -29,6 +29,7 @@ get_header(); ?>
 
 			<!-- Show a fancy art preview for the post -->
 			<div class="artSquareContainers">
+				ADSFBGSERSFDAEFDTESGFGRTAE
 				<?php
 				//Create an array of animation classes
 				$fadeArray = array("fadeInUp", "fadeInLeft", "fadeInDown", "fadeInRight");
@@ -49,12 +50,14 @@ get_header(); ?>
                             if( !empty($artImage) ) {
 								//Get the url of the first Image in the array
 								$imageUrls = types_render_field("art-images", array(
-									"url" => "true",
 									'size' => 'medium',
+									'class' => 'artSquareImage',
 									'separator' => '|'));
 								$imageUrls = explode( '|', $imageUrls );
+								console_log($imageUrls);
+								echo $imageUrls[0];
                         ?>
-							<img class="artSquareImage" alt="Work Image" src="<?php echo $imageUrls[0] ?>">
+							<!-- <img class="artSquareImage" alt="Work Image" src="<?php echo $imageUrls[0] ?>"> -->
                         <?php
 							} else if( !empty($artVideo) ) {
 							//Get the first video in the array
