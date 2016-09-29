@@ -138,6 +138,9 @@
     .artSquare {
         width: 45vw;
         height: 45vw;
+
+        -webkit-animation-duration: 0s !important;
+        animation-duration: 0s !important;
     }
 
     .artSquareImage {
