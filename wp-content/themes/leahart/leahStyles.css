@@ -23,16 +23,16 @@
 .artSquare {
     width: 17.5vw;
     height: 17.5vw;
-    background-color: rgba(80,80,80,0);
+    background-color: rgba(255,255,255,0.75);
     margin-top:  5px;
     margin-bottom: 7px;
     margin-left: 3px;
     margin-right: 3px;
     overflow: hidden;
     position: relative;
-    -webkit-box-shadow: -2px 4px 12px 0px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow:    -2px 4px 12px 0px rgba(50, 50, 50, 0.75);
-    box-shadow:         -2px 4px 12px 0px rgba(50, 50, 50, 0.75);
+    -webkit-box-shadow: -2px 4px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    -2px 4px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         -2px 4px 5px 0px rgba(50, 50, 50, 0.75);
 }
 
 .artSquareImage {
@@ -209,9 +209,9 @@ body:before {
     margin-top: 10px;
     margin-bottom: 5px;
 
-    -webkit-box-shadow: -2px 4px 12px 0px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow:    -2px 4px 12px 0px rgba(50, 50, 50, 0.75);
-    box-shadow:         -2px 4px 12px 0px rgba(50, 50, 50, 0.75);
+    -webkit-box-shadow: -2px 4px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    -2px 4px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         -2px 4px 5px 0px rgba(50, 50, 50, 0.75);
 }
 
 .hentry {
@@ -221,9 +221,9 @@ body:before {
 
 @media only screen and (min-width: 700px)  {
     .hentry {
-        -webkit-box-shadow: -2px 4px 12px 0px rgba(50, 50, 50, 0.75);
-        -moz-box-shadow:    -2px 4px 12px 0px rgba(50, 50, 50, 0.75);
-        box-shadow:         -2px 4px 12px 0px rgba(50, 50, 50, 0.75);
+        -webkit-box-shadow: -2px 4px 5px 0px rgba(50, 50, 50, 0.75);
+        -moz-box-shadow:    -2px 4px 5px 0px rgba(50, 50, 50, 0.75);
+        box-shadow:         -2px 4px 5px 0px rgba(50, 50, 50, 0.75);
     }
 }
 
@@ -236,6 +236,14 @@ body:before {
     font-weight: bold;
     margin-top: 20px;
     margin-left: 20px;
+}
+
+@media only screen and (min-width: 768px)  {
+
+    .widget-area {
+        -webkit-animation-duration: 0s !important;
+        animation-duration: 0s !important;
+    }
 }
 
 @media only screen and (max-width: 768px)  {
