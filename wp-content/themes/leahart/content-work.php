@@ -62,9 +62,11 @@
 		foreach ($images as $index => $image) {
 			?>
 			<div class = "artImageContainer">
-				<a href="<?php echo $image; ?>">
-					<img class="fullArtImage" alt="Full Image" src="<?php echo $image; ?>">
-				</a>
+				<div class = "center">
+					<a href="<?php echo $image; ?>">
+						<img class="fullArtImage" alt="Full Image" src="<?php echo $image; ?>">
+					</a>
+				</div>
 			</div>
 			<?php
 		}

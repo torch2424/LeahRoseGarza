@@ -120,6 +120,7 @@
     margin-right: auto;
     margin-top: 5px;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .artImageContainer:hover {
@@ -152,6 +153,7 @@
         min-height: 45vw;
         margin-left: auto;
         margin-right: auto;
+        object-fit: cover;
     }
 
     .playButtonOverlay {
@@ -274,4 +276,9 @@ body:before {
     margin: 0px;
     margin-top: 10px;
     margin-bottom: 5px;
+    height: 200px;
+}
+
+.site-branding {
+    margin-bottom: 10px;
 }

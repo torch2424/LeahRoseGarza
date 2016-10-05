@@ -27,7 +27,7 @@
 	</footer><!-- .site-footer -->
 
 	<!-- Aaron the dev -->
-	<footer class="leahFooter">Website created by <a href="https://aaronthedev.com/#/">Aaron Turner</a>.</footer>
+	<footer class="leahFooter"></footer>
 
 </div><!-- .site -->
 
